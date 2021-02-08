@@ -1,0 +1,1 @@
+This action is for testing to synchronize local repository to Git Hub.
