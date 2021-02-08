@@ -1,1 +1,19 @@
 This action is for testing to synchronize local repository to Git Hub.
+VS git is not working with some authentication issue.
+so, go to command line and use the below commands.
+
+git add .
+git commit -m "firs commit"
+git remote add orgin git_repository_url
+git push origin master
+
+// Can upload  any your local changes to origin
+git push --set-upstream origin master
+
+// Modify any file contents
+git add .
+git commit -m "second commit"
+git push
+
+Then go back to your git rposotory 
+
