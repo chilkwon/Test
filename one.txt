@@ -17,3 +17,5 @@ git push
 
 Then go back to your git rposotory 
 
+TO pull
+git pull https://github.com/chilkwon/Test.git
