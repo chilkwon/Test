@@ -1,0 +1,504 @@
+Microsoft Windows [Version 10.0.19042.928]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\chilhoan.kwon>cd\
+
+C:\>cd web*
+
+C:\webServicePractice>cd ..
+
+C:\>cd my*
+
+C:\mywebsites>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is 9298-9C65
+
+ Directory of C:\mywebsites
+
+04/12/2021  07:48 AM    <DIR>          .
+04/12/2021  07:48 AM    <DIR>          ..
+04/12/2021  07:50 AM    <DIR>          vuejs-playlist
+               0 File(s)              0 bytes
+               3 Dir(s)  87,240,851,456 bytes free
+
+C:\mywebsites>cd vu*
+
+C:\mywebsites\vuejs-playlist>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is 9298-9C65
+
+ Directory of C:\mywebsites\vuejs-playlist
+
+04/12/2021  07:50 AM    <DIR>          .
+04/12/2021  07:50 AM    <DIR>          ..
+04/12/2021  07:48 AM                72 .babelrc
+04/12/2021  07:48 AM               147 .editorconfig
+04/12/2021  07:48 AM               127 .gitignore
+04/12/2021  07:48 AM               208 index.html
+04/15/2021  03:10 PM    <DIR>          node_modules
+04/15/2021  03:10 PM           638,947 package-lock.json
+04/15/2021  03:10 PM               905 package.json
+04/12/2021  07:48 AM               329 README.md
+04/15/2021  03:13 PM    <DIR>          src
+04/12/2021  07:48 AM             1,600 webpack.config.js
+               8 File(s)        642,335 bytes
+               4 Dir(s)  87,240,667,136 bytes free
+
+C:\mywebsites\vuejs-playlist>git init
+Initialized empty Git repository in C:/mywebsites/vuejs-playlist/.git/
+
+C:\mywebsites\vuejs-playlist>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is 9298-9C65
+
+ Directory of C:\mywebsites\vuejs-playlist
+
+04/18/2021  09:57 PM    <DIR>          .
+04/18/2021  09:57 PM    <DIR>          ..
+04/12/2021  07:48 AM                72 .babelrc
+04/12/2021  07:48 AM               147 .editorconfig
+04/12/2021  07:48 AM               127 .gitignore
+04/12/2021  07:48 AM               208 index.html
+04/15/2021  03:10 PM    <DIR>          node_modules
+04/15/2021  03:10 PM           638,947 package-lock.json
+04/15/2021  03:10 PM               905 package.json
+04/12/2021  07:48 AM               329 README.md
+04/15/2021  03:13 PM    <DIR>          src
+04/12/2021  07:48 AM             1,600 webpack.config.js
+               8 File(s)        642,335 bytes
+               4 Dir(s)  87,257,194,496 bytes free
+
+C:\mywebsites\vuejs-playlist>cd\
+
+C:\>cd git*
+
+C:\GitPractice>cd p*
+
+C:\GitPractice\pullandpush>git init
+Initialized empty Git repository in C:/GitPractice/pullandpush/.git/
+
+C:\GitPractice\pullandpush>git pull https://github.com/chilkwon/Test.git
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 687 bytes | 2.00 KiB/s, done.
+From https://github.com/chilkwon/Test
+ * branch            HEAD       -> FETCH_HEAD
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\GitPractice\pullandpush>git add  .
+
+C:\GitPractice\pullandpush>git commit -m "changes made"
+[master f436d15] changes made
+ 1 file changed, 2 insertions(+)
+
+C:\GitPractice\pullandpush>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\GitPractice\pullandpush>git remote add origin https://github.com/chilkwon/Test.git
+
+C:\GitPractice\pullandpush>git remote -v
+origin  https://github.com/chilkwon/Test.git (fetch)
+origin  https://github.com/chilkwon/Test.git (push)
+
+C:\GitPractice\pullandpush>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': chilkwon
+Password for 'https://chilkwon@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/chilkwon/Test.git
+   7e5111f..f436d15  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\GitPractice\pullandpush>git add .
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   one.txt
+
+
+C:\GitPractice\pullandpush>git remote add origin https://github.com/chilkwon/Test.git
+fatal: remote origin already exists.
+
+C:\GitPractice\pullandpush>git remote -v
+origin  https://github.com/chilkwon/Test.git (fetch)
+origin  https://github.com/chilkwon/Test.git (push)
+
+C:\GitPractice\pullandpush>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': chilkwon
+Password for 'https://chilkwon@github.com':
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   one.txt
+
+
+C:\GitPractice\pullandpush>git commit -m "git pull situation instruction added"
+[master a2c00e5] git pull situation instruction added
+ 1 file changed, 59 insertions(+), 1 deletion(-)
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\GitPractice\pullandpush>git remote -v
+origin  https://github.com/chilkwon/Test.git (fetch)
+origin  https://github.com/chilkwon/Test.git (push)
+
+C:\GitPractice\pullandpush>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': chilkwon
+Password for 'https://chilkwon@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.23 KiB | 631.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/chilkwon/Test.git
+   f436d15..a2c00e5  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\GitPractice\pullandpush>git branch
+* master
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\GitPractice\pullandpush>git brachn
+git: 'brachn' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+C:\GitPractice\pullandpush>git branch
+* master
+
+C:\GitPractice\pullandpush>git branch feature1
+
+C:\GitPractice\pullandpush>git branch
+  feature1
+* master
+
+C:\GitPractice\pullandpush>git master
+git: 'master' is not a git command. See 'git --help'.
+
+The most similar command is
+        restore
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\GitPractice\pullandpush>git add .
+
+C:\GitPractice\pullandpush>git commit -m "added index.html"
+[master 50c9f85] added index.html
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+
+C:\GitPractice\pullandpush>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': chilkwon
+Password for 'https://chilkwon@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/chilkwon/Test.git
+   a2c00e5..50c9f85  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\GitPractice\pullandpush>git branch
+  feature1
+* master
+
+C:\GitPractice\pullandpush>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\GitPractice\pullandpush>git checkout feature1
+Switched to branch 'feature1'
+
+C:\GitPractice\pullandpush>git status
+On branch feature1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\GitPractice\pullandpush>git add -A
+
+C:\GitPractice\pullandpush>git commit -m "added news module"
+[feature1 51799c4] added news module
+ 1 file changed, 16 insertions(+)
+ create mode 100644 index.html
+
+C:\GitPractice\pullandpush>git branch
+* feature1
+  master
+
+C:\GitPractice\pullandpush>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\GitPractice\pullandpush>git branch
+  feature1
+* master
+
+C:\GitPractice\pullandpush>git pull
+Already up to date.
+
+C:\GitPractice\pullandpush>git checkout feature1
+Switched to branch 'feature1'
+
+C:\GitPractice\pullandpush>git merge master
+CONFLICT (add/add): Merge conflict in index.html
+Auto-merging index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\GitPractice\pullandpush>git status
+On branch feature1
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\GitPractice\pullandpush>git add -A
+
+C:\GitPractice\pullandpush>git commit -m "modifed index.html"
+[feature1 68a3619] modifed index.html
+
+C:\GitPractice\pullandpush>git push
+fatal: The current branch feature1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature1
+
+
+C:\GitPractice\pullandpush>git push --set-upstream orgin feature1
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\GitPractice\pullandpush>git origin
+git: 'origin' is not a git command. See 'git --help'.
+
+C:\GitPractice\pullandpush>git branch
+* feature1
+  master
+
+C:\GitPractice\pullandpush>git push -u orgin feature1
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\GitPractice\pullandpush>git remote add origin https://github.com/chilkwon/Test.git
+fatal: remote origin already exists.
+
+C:\GitPractice\pullandpush>git push -u origin feature1
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': chilkwon
+Password for 'https://chilkwon@github.com':
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 794 bytes | 397.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature1' on GitHub by visiting:
+remote:      https://github.com/chilkwon/Test/pull/new/feature1
+remote:
+To https://github.com/chilkwon/Test.git
+ * [new branch]      feature1 -> feature1
+Branch 'feature1' set up to track remote branch 'feature1' from 'origin'.
+
+C:\GitPractice\pullandpush>git branch
+* feature1
+  master
+
+C:\GitPractice\pullandpush>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\GitPractice\pullandpush>git branch
+  feature1
+* master
+
+C:\GitPractice\pullandpush>git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 627 bytes | 22.00 KiB/s, done.
+From https://github.com/chilkwon/Test
+   50c9f85..8d147a3  master     -> origin/master
+Updating 50c9f85..8d147a3
+Fast-forward
+ index.html | 13 ++++++++++---
+ 1 file changed, 10 insertions(+), 3 deletions(-)
+
+C:\GitPractice\pullandpush>git branch news
+
+C:\GitPractice\pullandpush>git branch
+  feature1
+* master
+  news
+
+C:\GitPractice\pullandpush>git checkout news
+Switched to branch 'news'
+
+C:\GitPractice\pullandpush>git status
+On branch news
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\GitPractice\pullandpush>git add -A
+
+C:\GitPractice\pullandpush>git commit -m "gone is news"
+[news 86f08f6] gone is news
+ 1 file changed, 6 deletions(-)
+
+C:\GitPractice\pullandpush>git push
+fatal: The current branch news has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin news
+
+
+C:\GitPractice\pullandpush>git push --set-upstream origin news
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': chilkwon
+Password for 'https://chilkwon@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'news' on GitHub by visiting:
+remote:      https://github.com/chilkwon/Test/pull/new/news
+remote:
+To https://github.com/chilkwon/Test.git
+ * [new branch]      news -> news
+Branch 'news' set up to track remote branch 'news' from 'origin'.
+
+C:\GitPractice\pullandpush>git status
+On branch news
+Your branch is up to date with 'origin/news'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\GitPractice\pullandpush>git add -A
+
+C:\GitPractice\pullandpush>git commit -m "removed white space"
+[news 2e39020] removed white space
+ 1 file changed, 2 deletions(-)
+
+C:\GitPractice\pullandpush>git push --set-upstream origin news
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': chilkwon
+Password for 'https://chilkwon@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 159.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/chilkwon/Test.git
+   86f08f6..2e39020  news -> news
+Branch 'news' set up to track remote branch 'news' from 'origin'.
+
+C:\GitPractice\pullandpush>
